@@ -21,6 +21,13 @@ dir="~/environment.d/"
 mkdir -p $dir ; cd $dir
 echo "export KWIN_FORCE_SW_CURSOR=1" > 10-kwin-force-sw-cursor=1
 ```
+OR:
+```
+dir="~/.config/environment.d/"
+mkdir -p $dir ; cd $dir
+echo "KWIN_FORCE_SW_CURSOR=1" > mouse.conf
+```
+
 
 
 ## Xorg
