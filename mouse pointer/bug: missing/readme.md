@@ -16,19 +16,18 @@ KDE:
   - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1383037304
   - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1383309264
 
-```
-dir="~/environment.d/"
-mkdir -p $dir ; cd $dir
-echo "export KWIN_FORCE_SW_CURSOR=1" > 10-kwin-force-sw-cursor=1
-```
-OR:
+**works!**
 ```
 dir="~/.config/environment.d/"
 mkdir -p $dir ; cd $dir
 echo "KWIN_FORCE_SW_CURSOR=1" > mouse.conf
 ```
-
-
+OR:
+```
+dir="~/environment.d/"
+mkdir -p $dir ; cd $dir
+echo "export KWIN_FORCE_SW_CURSOR=1" > 10-kwin-force-sw-cursor=1
+```
 
 ## Xorg
 - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1483938743
