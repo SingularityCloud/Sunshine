@@ -8,5 +8,6 @@ Gnome:
 https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1374964995
 
 KDE:
-https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1377858388
+- https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1377858388
+  - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1383037304
 - https://github.com/LizardByte/Sunshine/pull/1078#issuecomment-1484045323
