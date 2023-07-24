@@ -4,10 +4,27 @@ bug:
 - https://github.com/LizardByte/Sunshine/pull/1078
 
 # Solution
+## Wayland
 Gnome:
 https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1374964995
 
 KDE:
+- https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1483941690
 - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1377858388
   - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1383037304
-- https://github.com/LizardByte/Sunshine/pull/1078#issuecomment-1484045323
+  - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1383309264
+
+## Xorg
+- https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1483938743
+
+## Test build:
+
+
+```
+dir="~/environment.d/"
+mkdir -p $dir ; cd $dir
+echo "export KWIN_FORCE_SW_CURSOR=1" > 10-kwin-force-sw-cursor=1
+```
+
+# relation: RustDesk
+https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1483941690
