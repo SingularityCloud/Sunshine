@@ -27,5 +27,4 @@
     state: started
     enabled: true
     scope: user
-  become: true
   notify: reboot machine
