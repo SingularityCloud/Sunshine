@@ -13,6 +13,9 @@
     path: "{{service_file | dirname }}"
     state: directory
 
+- debug:
+    msg: "Whoami {{ansible_env.USER}}"
+
 - name: Template sunshine.service
   ansible.builtin.template:
     src: sunshine.service.j2
