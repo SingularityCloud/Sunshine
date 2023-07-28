@@ -1,0 +1,15 @@
+- name: Cache dir
+  ansible.builtin.file:
+    path: "{{cache_dir}}"
+    state: directory
+
+- name: Download pkg
+  ansible.builtin.get_url:
+    url: "{{download_url}}"
+    dest: "{{cache_dir}}/{{file_name}}"
+    force: false
+
+- name: Install .deb package
+  ansible.builtin.apt:
+    deb: "{{cache_dir}}/{{file_name}}"
+  become: true

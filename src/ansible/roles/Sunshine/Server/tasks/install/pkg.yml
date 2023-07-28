@@ -1,4 +1,0 @@
-- name: Install a .deb package from the internet
-  ansible.builtin.apt:
-    deb: "{{download_url}}"
-  become: true

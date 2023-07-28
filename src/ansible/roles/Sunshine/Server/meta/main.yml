@@ -1,0 +1,3 @@
+dependencies:
+  - Sunshine/Server/install
+  - Sunshine/Server/setup

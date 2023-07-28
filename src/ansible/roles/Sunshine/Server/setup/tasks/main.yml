@@ -1,0 +1,25 @@
+# https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/usage.html#setup
+
+- name: Create udev rules
+  ansible.builtin.lineinfile:
+    path: /etc/udev/rules.d/85-sunshine.rules
+    regexp: '^KERNEL'
+    line: 'KERNEL=="uinput", SUBSYSTEM=="misc", OPTIONS+="static_node=uinput", TAG+="uaccess"'
+  become: true
+
+- name: Template sunshine.service
+  ansible.builtin.template:
+    src: sunshine.service.j2
+    dest: "{{service_file}}"
+    owner: "{{ansible_env.USER}}"
+    group: "{{ansible_env.USER}}"
+    mode: '0755'
+
+- name: Start once & Start on boot
+  ansible.builtin.systemd:
+    name: sunshine
+    state: started
+    enabled: true
+    scope: user
+  become: true
+  notify: reboot machine

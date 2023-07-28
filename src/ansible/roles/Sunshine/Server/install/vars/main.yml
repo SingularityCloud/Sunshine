@@ -1,0 +1,9 @@
+sunshine_version: 0.20.0
+distro: "{{ansible_distribution | lower}}"
+distro_version: "{{ansible_distribution_version}}"
+file_name: "sunshine-{{ distro }}-{{ distro_version }}-amd64.deb"
+pkg_url: "https://github.com/LizardByte/Sunshine/releases/download/v{{ sunshine_version }}/{{file_name}}"
+
+download_url: "{{pkg_url if install_source == 'pkg'}}"
+
+cache_dir: "{{ansible_env.HOME}}/.uni/mirror/app"

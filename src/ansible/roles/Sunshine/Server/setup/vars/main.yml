@@ -1,0 +1,5 @@
+# https://docs.lizardbyte.dev/projects/sunshine/en/latest/about/usage.html#setup
+
+execstart: "{{'/usr/bin/sunshine' if install_source == 'pkg'}}"
+
+service_file: "{{ansible_env.HOME}}/.config/systemd/user/sunshine.service"
