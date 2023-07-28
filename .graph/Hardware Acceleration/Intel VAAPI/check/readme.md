@@ -8,3 +8,6 @@ num=128
 
 vainfo --display drm --device /dev/dri/renderD${num} | grep -E "((VAProfileH264High|VAProfileHEVCMain|VAProfileHEVCMain10).*VAEntrypointEncSlice)|Driver version"
 '''
+
+# Log:
+```Info: Found encoder vaapi: [h264_vaapi]```
