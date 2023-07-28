@@ -1,0 +1,5 @@
+- name: JupyterNotebook.ide
+  ansible.builtin.import_playbook: "{{ lookup('ansible.builtin.env', 'HOME') }}/src/vpn/JupyterNotebook.ide/src/ansible/uni.yml"
+
+- name: WebScraper.AI
+  ansible.builtin.import_playbook: "{{ lookup('ansible.builtin.env', 'HOME') }}/src/vpn/WebScraper.AI/src/ansible/uni.yml"

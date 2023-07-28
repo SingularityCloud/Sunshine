@@ -1,7 +1,7 @@
 # Sunshine
-Home: https://app.lizardbyte.dev/?lng=en
-Source: https://github.com/LizardByte/Sunshine  
-Doc: https://docs.lizardbyte.dev/projects/sunshine/en/latest/
+Home: https://app.lizardbyte.dev/Sunshine/  
+source: https://github.com/LizardByte/Sunshine  
+doc: https://docs.lizardbyte.dev/projects/sunshine/en/latest/
 
 sch: https://www.google.com/search?q=lizardbyte+sunshine
 

@@ -1,0 +1,10 @@
+# Get repos
+- name: git.yml
+  ansible.builtin.import_playbook: fn/git.yml
+  tags: [git]
+
+# Pre
+- name: pre.yml
+  ansible.builtin.import_playbook: fn/pre.yml
+  tags: [pre]
+

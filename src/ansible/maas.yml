@@ -1,0 +1,4 @@
+- hosts: maas
+  vars:
+  roles:
+  - Sunshine/Server

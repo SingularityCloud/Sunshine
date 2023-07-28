@@ -1,0 +1,3 @@
+# https://app.lizardbyte.dev/Sunshine/
+
+- include_tasks: "install/{{install_source}}.yml"

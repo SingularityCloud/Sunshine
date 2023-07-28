@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../WebScraper.AI"
+		},
+		{
+			"path": "../../JupyterNotebook.ide"
+		}
+	],
+	"settings": {}
+}
