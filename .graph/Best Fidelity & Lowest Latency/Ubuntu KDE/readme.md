@@ -3,7 +3,13 @@ The vaapi shows working in log.
 Without sudo, quality is poor, and it looks like software encoding.
 
 # Start
-```sudo sunshine```
+```
+sudo sunshine
+
+# Or
+
+sudo systemctl enable sunshine
+```
 
 # Log:
 ```Info: Found encoder vaapi: [h264_vaapi]```
