@@ -23,13 +23,13 @@ KDE:
   - https://github.com/LizardByte/Sunshine/issues/93#issuecomment-1383309264
 
 ```
-dir="~/.config/environment.d/"
+dir=~/.config/environment.d/
 mkdir -p $dir ; cd $dir
 echo "KWIN_FORCE_SW_CURSOR=1" > mouse.conf
-```
-OR:
-```
-dir="~/environment.d/"
+
+# OR:
+
+dir=~/environment.d/
 mkdir -p $dir ; cd $dir
 echo "export KWIN_FORCE_SW_CURSOR=1" > 10-kwin-force-sw-cursor=1
 ```
