@@ -1,3 +1,8 @@
 # https://app.lizardbyte.dev/Sunshine/
 
-- include_tasks: "install/{{install_source}}.yml"
+- name: Cache dir
+  ansible.builtin.file:
+    path: "{{cache_dir}}"
+    state: directory
+
+- include_tasks: "source/{{install_source}}.yml"

@@ -1,7 +1,8 @@
-- name: Cache dir
-  ansible.builtin.file:
-    path: "{{cache_dir}}"
-    state: directory
+- name: Install dependencies
+  ansible.builtin.apt:
+    pkg:
+    - libboost-chrono1.74.0
+  become: true
 
 - name: Download pkg
   ansible.builtin.get_url:

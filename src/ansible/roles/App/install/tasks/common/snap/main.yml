@@ -1,7 +1,0 @@
-- name: install Flutter Snap
-  community.general.snap:
-    name:
-      - flutter
-    classic: true
-  become: true
-  notify: initialize Flutter Snap
