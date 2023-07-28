@@ -5,7 +5,13 @@
     path: /etc/udev/rules.d/85-sunshine.rules
     regexp: '^KERNEL'
     line: 'KERNEL=="uinput", SUBSYSTEM=="misc", OPTIONS+="static_node=uinput", TAG+="uaccess"'
+    create: yes
   become: true
+
+- name: Create config dir
+  ansible.builtin.file:
+    path: "{{service_file | dirname }}"
+    state: directory
 
 - name: Template sunshine.service
   ansible.builtin.template:
